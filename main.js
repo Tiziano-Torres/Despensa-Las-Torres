@@ -56,7 +56,7 @@ function confirmarCompra() {
     mensaje = encodeURIComponent(mensaje);
 
     // Reemplazar [NúmeroDeTeléfono] con el número de teléfono de WhatsApp al que quieres redirigir
-    const numeroTelefono = '5493517606050'; // Asegúrate de poner el número de WhatsApp correcto (con código de país).
+    const numeroTelefono = '5493516531341'; // Asegúrate de poner el número de WhatsApp correcto (con código de país).
     const urlWhatsApp = `https://wa.me/${numeroTelefono}?text=${mensaje}`;
 
     // Redirigir al usuario a WhatsApp
