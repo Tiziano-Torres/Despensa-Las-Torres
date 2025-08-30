@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despensa Las Torres</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>-<span class="resaltar">Despensa Las Torres</span>-</h1>
+        <img src="logo.jpg" height="200px" width="200px">
+    </header>
+
+    <main>
+        <section class="productos-grid">
+            <div class="tarjeta-producto">
+                <img src="descarga.jfif" alt="sanguchito de miga">
+                <h3>sanguchito de miga</h3>
+                <p>$1000</p>
+                <button onclick="agregarAlCarrito('sanguchito de miga', 1000)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="verdura.jpeg" alt="sanguchito de miga de verdura">
+                <h3>sanguchito de miga de verdura</h3>
+                <p>$1000</p>
+                <button onclick="agregarAlCarrito('sanguchito de miga de verdura', 1000)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="pebete.webp" alt="pebete de jamon y queso">
+                <h3>pebete de jamon y queso</h3>
+                <p>$1000</p>
+                <button onclick="agregarAlCarrito('pebete de jamon y queso', 1000)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="salame.webp" alt="Pebete de salame">
+                <h3>pebete de salame</h3>
+                <p>$1000</p>
+                <button onclick="agregarAlCarrito('pebete de salame', 1000)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="doblecola.jfif" alt="Doblecola">
+                <h3>Doble cola</h3>
+                <p>$1500</p>
+                <button onclick="agregarAlCarrito('Doble cola', 1500)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="coca.jfif" alt="Coca cola">
+                <h3>Coca Cola</h3>
+                <p>$2000</p>
+                <button onclick="agregarAlCarrito('Coca Cola', 2000)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="pritty.webp" alt="Pritty">
+                <h3>Pritty</h3>
+                <p>$1700</p>
+                <button onclick="agregarAlCarrito('Pritty', 1700)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="fanta.webp" alt="Fanta">
+                <h3>Fanta</h3>
+                <p>$1700</p>
+                <button onclick="agregarAlCarrito('Fanta', 1700)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="chupetines.jfif" alt="Chupetines c/u">
+                <h3>Chupetines c/u</h3>
+                <p>$300</p>
+                <button onclick="agregarAlCarrito('Chupetines c/u', 250)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="topline.jfif" alt="Topline">
+                <h3>Topline</h3>
+                <p>$900</p>
+                <button onclick="agregarAlCarrito('Topline', 600)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="chocolate.webp" alt="Dos corazones">
+                <h3>Dos corazones</h3>
+                <p>$2000</p>
+                <button onclick="agregarAlCarrito('Dos corazones', 2000)">Agregar al carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="milka.webp" alt="Milka aireado">
+                <h3>Milka aireado</h3>
+                <p>$2000</p>
+                <button onclick="agregarAlCarrito('Milka aireado', 2000)">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section class="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p id="total">Total: $0</p>
+            <button onclick="confirmarCompra()">Confirmar compra</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Programado por Tiziano Torres de 7B.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
