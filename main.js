@@ -11,7 +11,16 @@ function agregarAlCarrito(nombre, precio) {
 }
 
 function quitarDelCarrito(nombre) {
-    carrito = carrito.filter(item => item.nombre !== nombre);
+    const producto = carrito.find(item => item.nombre === nombre);
+
+    if (producto) {
+        if (producto.cantidad > 1) {
+            producto.cantidad--; // Resta de a uno
+        } else {
+            carrito = carrito.filter(item => item.nombre !== nombre); // Elimina si ya no quedan
+        }
+    }
+
     actualizarCarrito();
 }
 
@@ -43,7 +52,7 @@ function confirmarCompra() {
         return;
     }
 
-    let mensaje = "¡Hola! Me gustaría hacer el siguiente pedido:\n\n";
+    let mensaje = "Hola, buenos dias me gustaría hacer el siguiente pedido:\n\n";
 
     carrito.forEach(item => {
         mensaje += `${item.nombre} x${item.cantidad} - $${item.precio * item.cantidad}\n`;
